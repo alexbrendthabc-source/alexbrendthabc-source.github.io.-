@@ -182,27 +182,36 @@
             admission management.
         </p>
 
-        <!-- CHEVRON BUTTON -->
-        <button
-            class="project-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="aisat-details"
-            onclick="
-                const details = document.getElementById('aisat-details');
-                const expanded = this.getAttribute('aria-expanded') === 'true';
+       <div class="project aisat-project">
 
-                this.setAttribute('aria-expanded', String(!expanded));
-                details.hidden = expanded;
-                this.querySelector('.chevron').textContent = expanded ? '⌄' : '⌃';
-                this.querySelector('.toggle-label').textContent =
-                    expanded ? 'View Project Details' : 'Hide Project Details';
-            "
-        >
-            <span class="toggle-label">View Project Details</span>
-            <span class="chevron" aria-hidden="true">⌄</span>
-        </button>
+    <!-- CHEVRON IN THE TOP-RIGHT CORNER -->
+    <button
+        class="project-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="aisat-details"
+        onclick="
+            const details = document.getElementById('aisat-details');
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            details.hidden = expanded;
+            this.querySelector('.chevron').textContent =
+                expanded ? '⌄' : '⌃';
+    
+    >
+        <span class="chevron" aria-hidden="true">⌄</span>
+    </button>
 
+    <div class="project-thumb thumb-aisat">
+        <span class="thumb-label">AISAT</span>
+    </div>
+
+    <div class="project-info">
+        <!-- Keep your existing AISAT description,
+             expandable details, and portal links here. -->
+    </div>
+
+</div>
         <!-- EXPANDABLE PROJECT DETAILS -->
         <div id="aisat-details" class="project-details" hidden>
 
