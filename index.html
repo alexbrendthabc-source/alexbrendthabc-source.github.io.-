@@ -164,53 +164,104 @@
 
     <div class="projects">
 
-        <!-- AISAT ADMISSION SYSTEM -->
-        <div class="project">
-            <div class="project-thumb thumb-aisat">
-                <span class="thumb-label">AISAT</span>
+      
+<!-- AISAT ADMISSION SYSTEM -->
+<div class="project aisat-project">
+
+    <div class="project-thumb thumb-aisat">
+        <span class="thumb-label">AISAT</span>
+    </div>
+
+    <div class="project-info">
+        <p class="project-tag">FULL-STACK WEB DEVELOPMENT</p>
+        <h3>AISAT Admission System</h3>
+
+        <p>
+            An academic admission system designed to support
+            student registration, email verification, and
+            admission management.
+        </p>
+
+        <!-- CHEVRON BUTTON -->
+        <button
+            class="project-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="aisat-details"
+            onclick="
+                const details = document.getElementById('aisat-details');
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+
+                this.setAttribute('aria-expanded', String(!expanded));
+                details.hidden = expanded;
+                this.querySelector('.chevron').textContent = expanded ? '⌄' : '⌃';
+                this.querySelector('.toggle-label').textContent =
+                    expanded ? 'View Project Details' : 'Hide Project Details';
+            "
+        >
+            <span class="toggle-label">View Project Details</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+        </button>
+
+        <!-- EXPANDABLE PROJECT DETAILS -->
+        <div id="aisat-details" class="project-details" hidden>
+
+            <h4>About the Project</h4>
+            <p>
+                A web-based admission system created to help manage
+                applicant registration and administrative workflows.
+            </p>
+
+            <h4>Features</h4>
+            <ul>
+                <li>Student account registration and login</li>
+                <li>Email OTP verification</li>
+                <li>Student admission workflow</li>
+                <li>Admin login portal</li>
+                <li>Super Admin portal</li>
+                <li>Database-backed application management</li>
+            </ul>
+
+            <h4>Technologies Used</h4>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
             </div>
 
-            <div class="project-info">
-                <p class="project-tag">
-                    FULL-STACK WEB DEVELOPMENT
-                </p>
+            <p class="project-note">
+                Academic project. Features listed reflect the
+                intended showcase; availability may depend on
+                the live server and database.
+            </p>
 
-                <h3>AISAT Admission System</h3>
-
-                <p>
-                    An academic admission system featuring account
-                    registration, email OTP verification, and
-                    admission management workflows.
-                </p>
-
-                <p class="project-tag">
-                    HTML · CSS · JAVASCRIPT · PHP · MYSQL
-                </p>
-
-                <div class="aisat-links">
-                    <a href="https://aisat.nfy.fyi/login.html"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="button">
-                        Student Login ↗
-                    </a>
-
-                    <a href="https://aisat.nfy.fyi/admin_login.html"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="button button-ghost">
-                        Admin Login ↗
-                    </a>
-
-                    <a href="https://aisat.nfy.fyi/superadmin.html"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="button button-ghost">
-                        Super Admin ↗
-                    </a>
-                </div>
-            </div>
         </div>
+
+        <!-- PORTAL LINKS -->
+        <div class="aisat-links">
+            <a href="https://aisat.nfy.fyi/login.html"
+               target="_blank" rel="noopener noreferrer"
+               class="button">
+                Student Login ↗
+            </a>
+
+            <a href="https://aisat.nfy.fyi/admin_login.html"
+               target="_blank" rel="noopener noreferrer"
+               class="button button-ghost">
+                Admin Login ↗
+            </a>
+
+            <a href="https://aisat.nfy.fyi/superadmin.html"
+               target="_blank" rel="noopener noreferrer"
+               class="button button-ghost">
+                Super Admin ↗
+            </a>
+        </div>
+    </div>
+</div>
+
 
     </div>
 </section>
