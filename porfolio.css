@@ -17,19 +17,31 @@
 }
 
 /* Keep the project content clear of the chevron */
-.aisat-project .project-info {
-    padding-top: 42px;
+
+.aisat-project .project-toggle {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px;
+    width: auto;
+    min-width: 0;
 }
 
-/* Show only the chevron in the corner */
-.aisat-project .project-toggle .toggle-label {
-    display: none;
+.aisat-project .project-toggle:hover,
+.aisat-project .project-toggle:focus,
+.aisat-project .project-toggle:active {
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .aisat-project .project-toggle .chevron {
-    font-size: 1.4rem;
+    font-size: 0.85rem;
     line-height: 1;
+    background: transparent;
+    opacity: 0.7;
 }
+
 
 
 
