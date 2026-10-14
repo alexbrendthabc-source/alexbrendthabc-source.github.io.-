@@ -1,4 +1,36 @@
 
+/* Position the project details chevron in the top-right */
+.aisat-project {
+    position: relative;
+}
+
+.aisat-project .project-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: auto;
+    margin: 0;
+    padding: 8px 12px;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+/* Keep the project content clear of the chevron */
+.aisat-project .project-info {
+    padding-top: 42px;
+}
+
+/* Show only the chevron in the corner */
+.aisat-project .project-toggle .toggle-label {
+    display: none;
+}
+
+.aisat-project .project-toggle .chevron {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
 
 
 
