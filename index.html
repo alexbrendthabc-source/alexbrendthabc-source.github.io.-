@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Brendth | Aspiring Developer</title>
     <meta name="description" content="Brendth — Aspiring developer building clean, modern web experiences with HTML, CSS, JavaScript, and Python.">
-
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff3b5c'>B</text></svg>">
-
-    <link rel="stylesheet" href="porfolio.css">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
@@ -37,20 +33,14 @@
         </nav>
     </header>
 
-
     <main>
 
         <!-- HERO -->
         <section class="hero">
-
             <div class="hero-text">
-
                 <p class="small-text">● PLAYER 1 — READY</p>
-
                 <h1>YOUR VISION,<br><span>MY MISSION.</span></h1>
-
                 <h2>Aspiring Developer</h2>
-
                 <p class="description">
                     I'm a Computer Science graduate building my skills
                     in web development, programming, and technology —
@@ -64,42 +54,24 @@
                        class="button button-ghost">View GitHub ↗</a>
                 </div>
 
-                <!-- Stats row -->
                 <div class="stats">
-                    <div class="stat">
-                        <h3>5+</h3>
-                        <p>Projects Built</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Commitment</p>
-                    </div>
-                    <div class="stat">
-                        <h3>4</h3>
-                        <p>Core Skills</p>
-                    </div>
-                    <div class="stat">
-                        <h3>∞</h3>
-                        <p>Curiosity</p>
-                    </div>
+                    <div class="stat"><h3>5+</h3><p>Projects Built</p></div>
+                    <div class="stat"><h3>100%</h3><p>Commitment</p></div>
+                    <div class="stat"><h3>4</h3><p>Core Skills</p></div>
+                    <div class="stat"><h3>∞</h3><p>Curiosity</p></div>
                 </div>
-
             </div>
-
 
             <div class="hero-image">
-                <img src="3400ee25-ebf0-49a9-9bb3-f48313cfb5dd.jpg"
-                     alt="Brendth">
+                <img src="3400ee25-ebf0-49a9-9bb3-f48313cfb5dd.jpg" alt="Brendth">
             </div>
-
         </section>
-
 
         <!-- ABOUT -->
         <section id="about" class="section">
             <p class="section-label">● 01 — ABOUT ME</p>
             <h2>A Passionate<br>Creative Developer</h2>
-            <p>
+            <p class="section-copy">
                 I'm an aspiring developer focused on improving my
                 programming fundamentals and creating useful projects.
                 I'm currently exploring web development and software
@@ -108,162 +80,91 @@
             </p>
         </section>
 
-
         <!-- SKILLS -->
         <section id="skills" class="section">
             <p class="section-label">● 02 — SKILLS</p>
             <h2>What I Work With</h2>
 
             <div class="skills">
-
-                <div class="skill">
-                    <span>01</span>
-                    <h3>HTML &amp; CSS</h3>
-                    <p>Building clean and responsive websites.</p>
-                </div>
-
-                <div class="skill">
-                    <span>02</span>
-                    <h3>JavaScript</h3>
-                    <p>Learning interactive web experiences.</p>
-                </div>
-
-                <div class="skill">
-                    <span>03</span>
-                    <h3>Python</h3>
-                    <p>Creating programs and improving my logic.</p>
-                </div>
-
-                <div class="skill">
-                    <span>04</span>
-                    <h3>Git &amp; GitHub</h3>
-                    <p>Managing and tracking my projects.</p>
-                </div>
-
+                <div class="skill"><span>01</span><h3>HTML &amp; CSS</h3><p>Building clean and responsive websites.</p></div>
+                <div class="skill"><span>02</span><h3>JavaScript</h3><p>Learning interactive web experiences.</p></div>
+                <div class="skill"><span>03</span><h3>Python</h3><p>Creating programs and improving my logic.</p></div>
+                <div class="skill"><span>04</span><h3>Git &amp; GitHub</h3><p>Managing and tracking my projects.</p></div>
             </div>
         </section>
 
-
-      
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <div class="section-head">
-        <div>
-            <p class="section-label">● 03 — MY PROJECTS</p>
-            <h2>Things I've Built</h2>
-        </div>
-
-        <a href="https://github.com/alexbrendthabc-source?tab=repositories"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="view-more">
-            All Repos on GitHub ↗
-        </a>
-    </div>
-
-    <div class="projects">
-
-
-
-<!-- AISAT ADMISSION SYSTEM -->
-<div class="project aisat-project">
-
-    <div class="project-thumb thumb-aisat">
-        <span class="thumb-label">AISAT</span>
-    </div>
-
-    <div class="project-info">
-        <p class="project-tag">FULL-STACK WEB DEVELOPMENT</p>
-        <h3>AISAT Admission System</h3>
-
-        <p>
-            An academic admission system designed to support
-            student registration, email verification, and
-            admission management.
-        </p>
-
-        <!-- CHEVRON BUTTON -->
-        <button
-            class="project-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="aisat-details"
-            onclick="
-                const details = document.getElementById('aisat-details');
-                const expanded = this.getAttribute('aria-expanded') === 'true';
-
-                this.setAttribute('aria-expanded', String(!expanded));
-                details.hidden = expanded;
-                this.querySelector('.chevron').textContent = expanded ? '⌄' : '⌃';
-                this.querySelector('.toggle-label').textContent =
-                    expanded ? 'View Project Details' : 'Hide Project Details';
-            "
-        >
-            <span class="toggle-label">View Project Details</span>
-            <span class="chevron" aria-hidden="true">⌄</span>
-        </button>
-
-        <!-- EXPANDABLE PROJECT DETAILS -->
-        <div id="aisat-details" class="project-details" hidden>
-
-            <h4>About the Project</h4>
-            <p>
-                A web-based admission system created to help manage
-                applicant registration and administrative workflows.
-            </p>
-
-            <h4>Features</h4>
-            <ul>
-                <li>Student account registration and login</li>
-                <li>Email OTP verification</li>
-                <li>Student admission workflow</li>
-                <li>Admin login portal</li>
-                <li>Super Admin portal</li>
-                <li>Database-backed application management</li>
-            </ul>
-
-            <h4>Technologies Used</h4>
-            <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>MySQL</span>
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-head">
+                <div>
+                    <p class="section-label">● 03 — MY PROJECTS</p>
+                    <h2>Things I've Built</h2>
+                </div>
+                <a href="https://github.com/alexbrendthabc-source?tab=repositories"
+                   target="_blank" rel="noopener noreferrer"
+                   class="view-more">All Repos on GitHub ↗</a>
             </div>
 
-            <p class="project-note">
-                Academic project. Features listed reflect the
-                intended showcase; availability may depend on
-                the live server and database.
-            </p>
+            <div class="projects">
+                <article class="project aisat-project">
+                    <div class="project-thumb thumb-aisat">
+                        <span class="thumb-label">AISAT</span>
+                    </div>
 
-        </div>
+                    <div class="project-info">
+                        <p class="project-tag">FULL-STACK WEB DEVELOPMENT</p>
+                        <h3>AISAT Admission System</h3>
+                        <p>
+                            An academic admission system designed to support
+                            student registration, email verification, and
+                            admission management.
+                        </p>
 
-        <!-- PORTAL LINKS -->
-        <div class="aisat-links">
-            <a href="https://aisat.nfy.fyi/login.html"
-               target="_blank" rel="noopener noreferrer"
-               class="button">
-                Student Login ↗
-            </a>
+                        <button class="project-toggle" type="button"
+                                aria-expanded="false" aria-controls="aisat-details">
+                            <span class="toggle-label">View Project Details</span>
+                            <span class="chevron" aria-hidden="true">⌄</span>
+                        </button>
 
-            <a href="https://aisat.nfy.fyi/admin_login.html"
-               target="_blank" rel="noopener noreferrer"
-               class="button button-ghost">
-                Admin Login ↗
-            </a>
+                        <div id="aisat-details" class="project-details" hidden>
+                            <h4>About the Project</h4>
+                            <p>
+                                A web-based admission system created to help manage
+                                applicant registration and administrative workflows.
+                            </p>
 
-            <a href="https://aisat.nfy.fyi/superadmin.html"
-               target="_blank" rel="noopener noreferrer"
-               class="button button-ghost">
-                Super Admin ↗
-            </a>
-        </div>
-    </div>
-</section>
+                            <h4>Features</h4>
+                            <ul>
+                                <li>Student account registration and login</li>
+                                <li>Email OTP verification</li>
+                                <li>Student admission workflow</li>
+                                <li>Admin login portal</li>
+                                <li>Super Admin portal</li>
+                                <li>Database-backed application management</li>
+                            </ul>
 
+                            <h4>Technologies Used</h4>
+                            <div class="project-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                <span>PHP</span><span>MySQL</span>
+                            </div>
 
+                            <p class="project-note">
+                                Academic project. Features listed reflect the
+                                intended showcase; availability may depend on
+                                the live server and database.
+                            </p>
+                        </div>
+
+                        <div class="aisat-links">
+                            <a href="https://aisat.nfy.fyi/login.html" target="_blank" rel="noopener noreferrer" class="button">Student Login ↗</a>
+                            <a href="https://aisat.nfy.fyi/admin_login.html" target="_blank" rel="noopener noreferrer" class="button button-ghost">Admin Login ↗</a>
+                            <a href="https://aisat.nfy.fyi/superadmin.html" target="_blank" rel="noopener noreferrer" class="button button-ghost">Super Admin ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <!-- GAMES -->
         <section id="games" class="section">
@@ -281,11 +182,8 @@
             </p>
 
             <div class="games">
-
                 <a href="flappy.html" class="game-card">
-                    <div class="game-art art-flappy">
-                        <span class="game-emoji">🐦</span>
-                    </div>
+                    <div class="game-art art-flappy"><span class="game-emoji">🐦</span></div>
                     <div class="game-meta">
                         <p class="project-tag">ARCADE</p>
                         <h3>Flappy Bird</h3>
@@ -295,9 +193,7 @@
                 </a>
 
                 <a href="chess.html" class="game-card">
-                    <div class="game-art art-chess">
-                        <span class="game-emoji">♟️</span>
-                    </div>
+                    <div class="game-art art-chess"><span class="game-emoji">♟️</span></div>
                     <div class="game-meta">
                         <p class="project-tag">STRATEGY</p>
                         <h3>Chess</h3>
@@ -305,44 +201,35 @@
                         <span class="game-play">▶ Play</span>
                     </div>
                 </a>
-
             </div>
         </section>
-
 
         <!-- CONTACT -->
         <section id="contact" class="section contact">
             <p class="section-label">● 05 — CONTACT</p>
             <h2>Let's Build<br>Something.</h2>
-            <p>
+            <p class="section-copy">
                 Interested in working with me or want to see what I'm
                 building? Reach out — I reply fast.
             </p>
 
-            <a href="mailto:alexbrendth.abc@gmail.com" class="email">
-                alexbrendth.abc@gmail.com
-            </a>
+            <a href="mailto:alexbrendth.abc@gmail.com" class="email">alexbrendth.abc@gmail.com</a>
 
             <div class="socials">
-                <a href="https://github.com/alexbrendthabc-source"
-                   target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="https://linkedin.com/in/yourname"
-                   target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://twitter.com/yourname"
-                   target="_blank" rel="noopener">Twitter</a>
+                <a href="https://github.com/alexbrendthabc-source" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://twitter.com/yourname" target="_blank" rel="noopener">Twitter</a>
             </div>
         </section>
 
     </main>
 
-
     <footer>
         <p>© 2026 Brendth. Built with HTML &amp; CSS.</p>
     </footer>
 
-
-    <!-- Scroll reveal -->
     <script>
+        // Scroll reveal
         const io = new IntersectionObserver((entries) => {
             entries.forEach((e) => {
                 if (e.isIntersecting) {
@@ -351,8 +238,22 @@
                 }
             });
         }, { threshold: 0.15 });
-
         document.querySelectorAll('.section').forEach((s) => io.observe(s));
+
+        // Project toggle
+        document.querySelectorAll('.project-toggle').forEach((btn) => {
+            const target = document.getElementById(btn.getAttribute('aria-controls'));
+            if (!target) return;
+
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                target.hidden = expanded;
+                btn.querySelector('.chevron').textContent = expanded ? '⌄' : '⌃';
+                btn.querySelector('.toggle-label').textContent =
+                    expanded ? 'View Project Details' : 'Hide Project Details';
+            });
+        });
     </script>
 
 </body>
